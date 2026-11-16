@@ -10,13 +10,13 @@ startButton.addEventListener("click", () => {
     gameContainer.style.display = "flex"
 });
 
-// let game 
+let game 
 
-// window.addEventListener("load", () => {
-//     startButton.addEventListener("click", () => {
-//         game = new Game() 
-//         game.startGame()
-//     }) 
+window.addEventListener("load", () => {
+    startButton.addEventListener("click", () => {
+        game = new Game() 
+        game.startGame()
+    }) 
 
 //     document.addEventListener("keydown", (e) => {
 //     // console.log(e.key)
@@ -27,6 +27,6 @@ startButton.addEventListener("click", () => {
 //       game.player.moveDown()
 //     } 
 //     })  
-//  }) 
+ }) 
 
  

@@ -1,4 +1,4 @@
-class player {
+class Player {
   constructor() {
     this.gameScreen = document.querySelector(".game-screen");
     this.element = document.createElement("div");
@@ -8,8 +8,9 @@ class player {
     this.height = 70;
 
     this.element.style.position = "absolute";
+    this.element.style.border = "2px solid black"
     this.element.style.width = `${this.width}px`;
-    this.element.style.height = `${this.height}px`;
+    this.element.style.height = `${this.height}px`; 
     this.element.style.top = `${this.y}px`;
     this.element.style.left = `${this.x}px`;
 
