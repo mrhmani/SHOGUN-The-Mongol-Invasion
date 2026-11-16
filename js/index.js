@@ -10,22 +10,23 @@ startButton.addEventListener("click", () => {
     gameContainer.style.display = "flex"
 });
 
-let game 
+// let game 
 
-window.addEventListener("load", () => {
-    startButton.addEventListener("click", () => {
-        game = new Game() 
-        game.startGame()
-    }) 
+// window.addEventListener("load", () => {
+//     startButton.addEventListener("click", () => {
+//         game = new Game() 
+//         game.startGame()
+//     }) 
 
-    document.addEventListener("keydown", (e) => {
-    // console.log(e.key)
-    if (e.key === "ArrowUp") {
-      game.player.moveUp()
-    }
-    if (e.key === "ArrowDown") {
-      game.player.moveDown()
-    } 
-    })  
- })  
+//     document.addEventListener("keydown", (e) => {
+//     // console.log(e.key)
+//     if (e.key === "ArrowUp") {
+//       game.player.moveUp()
+//     }
+//     if (e.key === "ArrowDown") {
+//       game.player.moveDown()
+//     } 
+//     })  
+//  }) 
 
+ 
