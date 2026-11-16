@@ -17,6 +17,22 @@
   background-size: cover;
 }
 
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.screen {
+  width: 80vw;
+  height: 70vh;
+  border: 1px solid black;
+  position: relative;
+}
+
+
 .start-screen h1 {
   margin-top: -580px;
 }
