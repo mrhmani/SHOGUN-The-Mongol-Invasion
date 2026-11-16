@@ -1,11 +1,13 @@
 const startScreen = document.querySelector(".start-screen")  
 const gameScreen = document.querySelector(".game-screen") 
 const endScreen = document.querySelector(".end-screen") 
-const startButton = document.querySelector(".start-btn") 
+const startButton = document.querySelector(".start-btn")  
+const gameContainer = document.querySelector(".game-container")
 
 startButton.addEventListener("click", () => {
     startScreen.style.display = "none"
-  gameScreen.style.display = "flex"
+    gameScreen.style.display = "flex" 
+    gameContainer.style.display = "flex"
 });
 
 let game 

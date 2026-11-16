@@ -34,7 +34,7 @@
 
 
 .start-screen h1 {
-  margin-top: -580px;
+  margin-top: -600px;
 }
 
 /* .end-screen h1 {
@@ -45,6 +45,7 @@ p {
   margin-top: 10px;
 }
 
+.game-container,
 .game-screen,
 .end-screen {
   display: none;
