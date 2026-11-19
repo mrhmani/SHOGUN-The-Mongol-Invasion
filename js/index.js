@@ -8,7 +8,7 @@ startButton.addEventListener("click", () => {
     startScreen.style.display = "none"
     gameScreen.style.display = "flex" 
     gameContainer.style.display = "flex"
-});
+})
 
 let game 
 
@@ -18,15 +18,10 @@ window.addEventListener("load", () => {
         game.startGame()
     }) 
 
-//     document.addEventListener("keydown", (e) => {
-//     // console.log(e.key)
-//     if (e.key === "ArrowUp") {
-//       game.player.moveUp()
-//     }
-//     if (e.key === "ArrowDown") {
-//       game.player.moveDown()
-//     } 
-//     })  
- }) 
-
- 
+    document.addEventListener("keydown", (e) => {
+    
+    if (e.key === " " && game !== undefined) {
+        game.player.jump(); 
+    }
+  })
+})
