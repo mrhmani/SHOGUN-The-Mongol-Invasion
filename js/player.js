@@ -22,7 +22,7 @@ class Player {
 
   
   jump() {
-    this.isJumping = true;
+    this.isJumping = true; 
 
     const upInterval = setInterval(() => {
       this.y -= 2;
@@ -42,9 +42,6 @@ class Player {
       }, 2000); 
 
     }, 2000); 
-
-
-
     
   }
 }
