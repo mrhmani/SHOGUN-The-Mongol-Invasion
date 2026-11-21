@@ -19,10 +19,9 @@ class Player {
 
     this.gameScreen.appendChild(this.element);
   }
-  
-  
+
   jump() {
-    this.isJumping = true; 
+    this.isJumping = true;
 
     const upInterval = setInterval(() => {
       this.y -= 2;
@@ -39,10 +38,7 @@ class Player {
 
       setTimeout(() => {
         clearInterval(downInterval);
-      }, 2000); 
-
-    }, 2000); 
-    
+      }, 2000);
+    }, 2000);
   }
 }
-
