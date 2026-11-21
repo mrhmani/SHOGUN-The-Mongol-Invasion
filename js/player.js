@@ -19,7 +19,7 @@ class Player {
 
     this.gameScreen.appendChild(this.element);
   }
-
+  
   
   jump() {
     this.isJumping = true; 

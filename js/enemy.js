@@ -2,7 +2,7 @@ class Enemy {
   constructor() {
     this.gameScreen = document.querySelector(".game-screen");
     this.element = document.createElement("div");
-    this.x = 1100;
+    this.x = 1180;
     this.y = 410;
     this.width = 200;
     this.height = 180;
@@ -18,10 +18,10 @@ class Enemy {
     this.element.style.backgroundSize = `cover`;
 
     this.gameScreen.appendChild(this.element);
-  } 
+  }
 
-    
-
-
-
-} 
+  move() {
+    this.x -= 5;
+    this.element.style.left = `${this.x}px`;
+  }
+}
