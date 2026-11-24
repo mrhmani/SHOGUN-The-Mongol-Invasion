@@ -47,5 +47,9 @@ class Player {
 
   updatePlayer() {
     this.element.style.top = `${this.y}px`
+  } 
+
+  drawPlayer() {
+    this.element.style.left = `${this.x}px`
   }
 }
