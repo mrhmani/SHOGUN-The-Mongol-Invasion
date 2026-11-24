@@ -26,6 +26,7 @@ class Game {
   }
 
   animate() {
+    this.player.updatePlayer();
     this.enemies.forEach((enemy, i) => {
       if (enemy.x <= 0) {
         this.enemies.splice(i, 1);

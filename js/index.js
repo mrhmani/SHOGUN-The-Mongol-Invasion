@@ -26,5 +26,11 @@ window.addEventListener("load", () => {
         }
       }
     }
+    if (e.key === "ArrowLeft") {
+      game.player.spawPlayer();
+    } 
+    if (e.key === "ArrowRight") {
+        game.player.spawPlayer();
+    }
   });
 });

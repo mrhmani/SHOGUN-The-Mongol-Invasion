@@ -13,7 +13,7 @@ class Player {
     this.element.style.position = "absolute";
     this.element.style.width = `${this.width}px`;
     this.element.style.height = `${this.height}px`;
-    this.element.style.top = `${this.y}px`;
+    this.element.style.top = `${this.y}px`; 
     this.element.style.left = `${this.x}px`;
     this.element.style.backgroundImage = `url("${this.image}")`;
     this.element.style.backgroundPosition = `center`;
@@ -21,13 +21,12 @@ class Player {
 
     this.gameScreen.appendChild(this.element);
   }
-
+ 
   jump() {
     this.isJumping = true;
 
     const upInterval = setInterval(() => {
       this.y -= 10;
-      this.updatePlayer();
     }, 20);
 
     setTimeout(() => {
@@ -35,7 +34,6 @@ class Player {
 
       const downInterval = setInterval(() => {
         this.y += 10;
-        this.updatePlayer();
       }, 20);
 
       setTimeout(() => {
@@ -47,9 +45,6 @@ class Player {
 
   updatePlayer() {
     this.element.style.top = `${this.y}px`
-  } 
-
-  drawPlayer() {
     this.element.style.left = `${this.x}px`
-  }
+  } 
 }
