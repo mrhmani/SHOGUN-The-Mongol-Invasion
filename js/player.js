@@ -26,23 +26,23 @@ class Player {
     this.isJumping = true;
 
     const upInterval = setInterval(() => {
-      this.y -= 2;
+      this.y -= 10;
       this.updatePlayer();
-    }, 100);
+    }, 20);
 
     setTimeout(() => {
       clearInterval(upInterval);
 
       const downInterval = setInterval(() => {
-        this.y += 2;
+        this.y += 10;
         this.updatePlayer();
-      }, 100);
+      }, 20);
 
       setTimeout(() => {
         clearInterval(downInterval);
         this.isJumping = false;
-      }, 2000);
-    }, 2000);
+      }, 800);
+    }, 800);
   } 
 
   updatePlayer() {
