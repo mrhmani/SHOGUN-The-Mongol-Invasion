@@ -1,6 +1,7 @@
 class Player {
   constructor() {
     this.gameScreen = document.querySelector(".game-screen");
+
     this.element = document.createElement("div");
     this.x = 50;
     this.y = 450;
@@ -13,7 +14,7 @@ class Player {
     this.element.style.position = "absolute";
     this.element.style.width = `${this.width}px`;
     this.element.style.height = `${this.height}px`;
-    this.element.style.top = `${this.y}px`; 
+    this.element.style.top = `${this.y}px`;
     this.element.style.left = `${this.x}px`;
     this.element.style.backgroundImage = `url("${this.image}")`;
     this.element.style.backgroundPosition = `center`;
@@ -21,7 +22,7 @@ class Player {
 
     this.gameScreen.appendChild(this.element);
   }
- 
+
   jump() {
     this.isJumping = true;
 
@@ -41,10 +42,24 @@ class Player {
         this.isJumping = false;
       }, 800);
     }, 800);
-  } 
+  }
 
   updatePlayer() {
-    this.element.style.top = `${this.y}px`
-    this.element.style.left = `${this.x}px`
-  } 
+    this.element.style.top = `${this.y}px`;
+    this.element.style.left = `${this.x}px`;
+  }
+
+  moveLeft() {
+    if (this.x >= 7) {
+      this.x -= 30;
+      this.element.style.left = `${this.x}px`;
+    }
+  }
+
+  moveRight() {
+    if (this.x <= 880) {
+      this.x += 30;
+      this.element.style.left = `${this.x}px`;
+    }
+  }
 }

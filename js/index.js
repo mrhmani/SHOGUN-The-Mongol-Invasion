@@ -19,18 +19,18 @@ window.addEventListener("load", () => {
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === " ") {
-      if (game !== undefined) {
+    if (game !== undefined) {
+      if (e.key === " ") {
         if (game.player.isJumping === false) {
           game.player.jump();
         }
       }
-    }
-    if (e.key === "ArrowLeft") {
-      game.player.spawPlayer();
-    } 
-    if (e.key === "ArrowRight") {
-        game.player.spawPlayer();
+      if (e.key === "ArrowLeft") {
+        game.player.moveLeft();
+      }
+      if (e.key === "ArrowRight") {
+        game.player.moveRight();
+      }
     }
   });
 });
