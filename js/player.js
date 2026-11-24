@@ -8,6 +8,8 @@ class Player {
     this.height = 150;
     this.image = "./assets/redsamurai.png";
 
+    this.isJumping = false;
+
     this.element.style.position = "absolute";
     this.element.style.width = `${this.width}px`;
     this.element.style.height = `${this.height}px`;
@@ -25,7 +27,7 @@ class Player {
 
     const upInterval = setInterval(() => {
       this.y -= 2;
-      this.element.style.top = `${this.y}px`;
+      this.updatePlayer();
     }, 100);
 
     setTimeout(() => {
@@ -33,12 +35,17 @@ class Player {
 
       const downInterval = setInterval(() => {
         this.y += 2;
-        this.element.style.top = `${this.y}px`;
+        this.updatePlayer();
       }, 100);
 
       setTimeout(() => {
         clearInterval(downInterval);
+        this.isJumping = false;
       }, 2000);
     }, 2000);
+  } 
+
+  updatePlayer() {
+    this.element.style.top = `${this.y}px`
   }
 }
