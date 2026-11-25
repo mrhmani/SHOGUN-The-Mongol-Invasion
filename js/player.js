@@ -1,7 +1,6 @@
 class Player {
   constructor() {
     this.gameScreen = document.querySelector(".game-screen");
-
     this.element = document.createElement("div");
     this.x = 50;
     this.y = 450;
@@ -62,4 +61,5 @@ class Player {
       this.element.style.left = `${this.x}px`;
     }
   }
+
 }

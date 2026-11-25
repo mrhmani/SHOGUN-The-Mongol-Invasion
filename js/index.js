@@ -3,6 +3,7 @@ const gameScreen = document.querySelector(".game-screen");
 const endScreen = document.querySelector(".end-screen");
 const startButton = document.querySelector(".start-btn");
 const gameContainer = document.querySelector(".game-container");
+const yesButton = document.querySelector(".yes-btn");
 
 startButton.addEventListener("click", () => {
   startScreen.style.display = "none";
@@ -11,6 +12,16 @@ startButton.addEventListener("click", () => {
 });
 
 let game;
+
+window.addEventListener("load", () => {
+  yesButton.addEventListener("click", () => {
+    if (game && game.player) {
+      game.player.element.remove();
+    }
+    game = new Game();
+    game.startGame();
+  });
+});
 
 window.addEventListener("load", () => {
   startButton.addEventListener("click", () => {

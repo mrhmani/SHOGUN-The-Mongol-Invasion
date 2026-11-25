@@ -14,6 +14,7 @@ class Game {
   startGame() {
     this.startScreen.style.display = "none";
     this.gameScreen.style.display = "flex";
+    this.endScreen.style.display = "none";
     this.player = new Player();
 
     this.enemyInterval = setInterval(() => {
@@ -65,5 +66,7 @@ class Game {
   gameOver() {
     this.gameScreen.style.display = "none";
     this.endScreen.style.display = "flex";
+    clearInterval(this.enemyInterval);
+    clearInterval(this.animationInterval);
   }
 }

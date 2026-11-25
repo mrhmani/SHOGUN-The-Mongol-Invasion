@@ -21,7 +21,7 @@ class Enemy {
   }
 
   move() {
-    this.x -= 5;
+    this.x -= 7;
     this.element.style.left = `${this.x}px`;
   }
 }
