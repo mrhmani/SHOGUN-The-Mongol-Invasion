@@ -50,14 +50,14 @@ class Player {
 
   moveLeft() {
     if (this.x >= 7) {
-      this.x -= 30;
+      this.x -= 20;
       this.element.style.left = `${this.x}px`;
     }
   }
 
   moveRight() {
     if (this.x <= 880) {
-      this.x += 30;
+      this.x += 20;
       this.element.style.left = `${this.x}px`;
     }
   }
