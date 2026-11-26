@@ -6,16 +6,29 @@
     <title>SHOGUN The Mongol Invasion</title>
 
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="start-screen">
       <h1>SHOGUN The Mongol Invasion</h1>
-      <p>
-        An unstoppable army has crossed the sea. The Mongols have invaded Japan,
-        destroying villages and threatening the lives of thousands. Become the
-        last hope of your people. Run, jump and survive. Your journey begins now
-      </p>
-      <p>Japan is counting on you. Your journey starts now !</p>
+      <div class="subtitle">
+        <p>
+          "An unstoppable army has crossed the sea. The Mongols have invaded
+          Japan, destroying villages and threatening the lives of thousands.
+          Become the last hope of your people. Run, jump and survive. Your
+          journey begins now"
+        </p>
+      </div>
+      <div class="subtitle2">
+        <p>Japan is counting on you ! Your journey starts now !</p>
+      </div>
+
       <button class="start-btn">Start Game</button>
       <button class="howtoplay-btn">How to play</button>
     </div>
@@ -27,7 +40,9 @@
         <h3>Try Again?</h3>
         <div class="gameover-options">
           <button class="yes-btn">YES</button>
-          <button onclick="window.location.href='index.html'" class="no-btn">NO</button>
+          <button onclick="window.location.href = 'index.html'" class="no-btn">
+            NO
+          </button>
         </div>
       </div>
     </div>
