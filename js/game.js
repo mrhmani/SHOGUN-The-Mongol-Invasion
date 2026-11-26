@@ -3,7 +3,8 @@ class Game {
     this.gameScreen = document.querySelector(".game-screen");
     this.endScreen = document.querySelector(".end-screen");
     this.startScreen = document.querySelector(".start-screen");
-    this.lifeContainer = document.querySelector(".life");
+    // this.lifeContainer = document.querySelectorAll(".life");
+    this.hearts = document.querySelectorAll(".heart");
     this.player = null;
     this.enemies = [];
     this.enemyInterval = null;
@@ -53,7 +54,8 @@ class Game {
       this.enemies.splice(enemyIndex, 1);
       enemy.element.remove();
       this.lives -= 1;
-      this.lifeContainer.textContent = this.lives;
+      // this.lifeContainer.textContent = this.lives;
+      this.hearts[this.lives].src = "./assets/heart-empty.png";
 
       if (this.lives <= 0) {
         clearInterval(this.enemyInterval);
