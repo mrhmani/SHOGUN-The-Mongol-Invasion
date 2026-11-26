@@ -3,7 +3,7 @@ class Player {
     this.gameScreen = document.querySelector(".game-screen");
     this.element = document.createElement("div");
     this.x = 50;
-    this.y = 450;
+    this.y = 380;
     this.width = 100;
     this.height = 150;
     this.image = "./assets/redsamurai.png";

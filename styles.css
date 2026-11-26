@@ -67,6 +67,44 @@
   height: 100vh;
 }
 
+.game-screen {
+  position: relative;
+  overflow: hidden;
+}
+
+.city-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  animation: slider 60s linear infinite;
+}
+
+.city-slider img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.life {
+  color: white;
+  font-size: xx-large;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
 .screen {
   width: 80vw;
   height: 70vh;
@@ -173,9 +211,4 @@
 .game-screen,
 .end-screen {
   display: none;
-}
-
-.life {
-  color: black;
-  font-size: xx-large;
 }

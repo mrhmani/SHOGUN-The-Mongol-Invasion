@@ -3,7 +3,7 @@ class Enemy {
     this.gameScreen = document.querySelector(".game-screen");
     this.element = document.createElement("div");
     this.x = 1180;
-    this.y = 410;
+    this.y = 350;
     this.width = 200;
     this.height = 180;
     this.image = "./assets/mongolhorse.png";
