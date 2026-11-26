@@ -3,7 +3,6 @@ class Game {
     this.gameScreen = document.querySelector(".game-screen");
     this.endScreen = document.querySelector(".end-screen");
     this.startScreen = document.querySelector(".start-screen");
-    // this.lifeContainer = document.querySelectorAll(".life");
     this.hearts = document.querySelectorAll(".heart");
     this.player = null;
     this.enemies = [];
@@ -60,6 +59,7 @@ class Game {
       if (this.lives <= 0) {
         clearInterval(this.enemyInterval);
         clearInterval(this.animationInterval);
+        this.hearts.forEach(heart => heart.src = "./assets/heart-full.png")
         this.gameOver();
       }
     }
