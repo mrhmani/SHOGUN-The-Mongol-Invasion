@@ -42,15 +42,38 @@
     5px 0px black,
     -5px 0px black,
     inset 0px 5px #00000038;
-} 
- 
+}
+
+.howtoplay-screen p {
+  margin-top: 0px;
+ margin-bottom: 20px;
+  max-width: 500px;
+  text-align: center;
+
+  font-size: 13px;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+
+
+
+
+  /* margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 800px;
+  letter-spacing: 2px;
+  line-height: 1.6; */
+}
 
 .howtoplay-screen {
-
-  
-  background-image: url("./assets/howtoplayimage.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("./assets/howtoplay-screen.png"); /* Zorg dat dit bestand de 4:3 versie is */
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .start-screen {
