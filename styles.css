@@ -1,15 +1,16 @@
 * {
   padding: 0;
   margin: 0;
-} 
+}
 
 body {
-  background: url("/assets/backgroundbody.png")
-    center center / cover fixed no-repeat;
+  background: url("/assets/backgroundbody.png") center center / cover fixed
+    no-repeat;
 }
 
 .start-btn,
-.howtoplay-btn {
+.howtoplay-btn,
+.back-btn {
   position: relative;
   color: #fff;
   background-color: #d0b505;
@@ -29,7 +30,8 @@ body {
 }
 
 .start-btn:hover::before,
-.howtoplay-btn:hover::before {
+.howtoplay-btn:hover::before,
+.back-btn:hover::before {
   content: "⚔️";
   font-size: 30px;
   position: absolute;
@@ -39,7 +41,8 @@ body {
 }
 
 .start-btn:active,
-.howtoplay-btn:active {
+.howtoplay-btn:active,
+.back-btn:active {
   transform: translateY(5px);
   box-shadow:
     0px 5px black,
@@ -69,7 +72,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-}
+} 
 
 .start-screen {
   display: flex;
@@ -95,12 +98,11 @@ body {
 
 .game-screen {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   border: 5px solid #6b3d19;
-    outline: 2px solid #d5a448;
-    outline-offset: 2px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-
+  outline: 2px solid #d5a448;
+  outline-offset: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 .city-slider {
@@ -182,10 +184,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border: 5px solid #6b3d19;
-    outline: 2px solid #d5a448;
-    outline-offset: 2px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-
+  outline: 2px solid #d5a448;
+  outline-offset: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 .end-screen h1 {

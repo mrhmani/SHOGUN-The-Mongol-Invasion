@@ -5,7 +5,8 @@ const startButton = document.querySelector(".start-btn");
 const howtoplayScreen = document.querySelector(".howtoplay-screen");
 const howtoplayButton = document.querySelector(".howtoplay-btn");
 const gameContainer = document.querySelector(".game-container");
-const yesButton = document.querySelector(".yes-btn");
+const yesButton = document.querySelector(".yes-btn"); 
+const backButton = document.querySelector(".back-btn");
 
 startButton.addEventListener("click", () => {
   startScreen.style.display = "none";
@@ -17,6 +18,12 @@ howtoplayButton.addEventListener("click", () => {
   startScreen.style.display = "none";
   howtoplayScreen.style.display = "flex";
   gameContainer.style.display = "flex";
+}); 
+
+backButton.addEventListener("click", () => {
+  howtoplayScreen.style.display = "none";
+  gameContainer.style.display = "none";
+  startScreen.style.display = "flex";
 });
 
 let game;
