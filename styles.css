@@ -1,6 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+} 
+
+body {
+  background: url("/assets/backgroundbody.png")
+    center center / cover fixed no-repeat;
 }
 
 .start-btn,
@@ -90,7 +95,12 @@
 
 .game-screen {
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
+  border: 5px solid #6b3d19;
+    outline: 2px solid #d5a448;
+    outline-offset: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+
 }
 
 .city-slider {
@@ -171,6 +181,11 @@
   background-image: url("./assets/GameoverScreen.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  border: 5px solid #6b3d19;
+    outline: 2px solid #d5a448;
+    outline-offset: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+
 }
 
 .end-screen h1 {
