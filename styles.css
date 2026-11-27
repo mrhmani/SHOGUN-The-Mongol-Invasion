@@ -4,7 +4,8 @@
 }
 
 body {
-  background: url("/assets/backgroundbody.png") center center / cover fixed
+  background: url("./assets/backgroundbody.png") 
+  center center / cover fixed
     no-repeat;
 }
 
