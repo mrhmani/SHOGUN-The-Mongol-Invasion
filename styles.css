@@ -4,9 +4,12 @@
 }
 
 body {
-  background: url("./assets/backgroundbody.png") 
-  center center / cover fixed
-    no-repeat;
+  /* background: url("./assets/backgroundbody.png") center center / cover fixed
+    no-repeat; */
+
+  background-image: url("/assets/backgroundimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .start-btn,
@@ -73,7 +76,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-} 
+}
 
 .start-screen {
   display: flex;
