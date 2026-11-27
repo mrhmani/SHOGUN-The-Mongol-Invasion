@@ -2,7 +2,8 @@ class Game {
   constructor() {
     this.gameScreen = document.querySelector(".game-screen");
     this.endScreen = document.querySelector(".end-screen");
-    this.startScreen = document.querySelector(".start-screen");
+    this.startScreen = document.querySelector(".start-screen"); 
+    this.howtoplayScreen = document.querySelector(".howtoplay-screen");
     this.hearts = document.querySelectorAll(".heart");
     this.player = null;
     this.enemies = [];
@@ -15,6 +16,7 @@ class Game {
     this.startScreen.style.display = "none";
     this.gameScreen.style.display = "flex";
     this.endScreen.style.display = "none";
+    this.howtoplayScreen.style.display = "none";
     this.player = new Player();
 
     this.enemyInterval = setInterval(() => {
@@ -53,7 +55,6 @@ class Game {
       this.enemies.splice(enemyIndex, 1);
       enemy.element.remove();
       this.lives -= 1;
-      // this.lifeContainer.textContent = this.lives;
       this.hearts[this.lives].src = "./assets/heart-empty.png";
 
       if (this.lives <= 0) {

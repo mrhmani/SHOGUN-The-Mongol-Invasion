@@ -2,12 +2,20 @@ const startScreen = document.querySelector(".start-screen");
 const gameScreen = document.querySelector(".game-screen");
 const endScreen = document.querySelector(".end-screen");
 const startButton = document.querySelector(".start-btn");
+const howtoplayScreen = document.querySelector(".howtoplay-screen");
+const howtoplayButton = document.querySelector(".howtoplay-btn");
 const gameContainer = document.querySelector(".game-container");
 const yesButton = document.querySelector(".yes-btn");
 
 startButton.addEventListener("click", () => {
   startScreen.style.display = "none";
   gameScreen.style.display = "flex";
+  gameContainer.style.display = "flex";
+});
+
+howtoplayButton.addEventListener("click", () => {
+  startScreen.style.display = "none";
+  howtoplayScreen.style.display = "flex";
   gameContainer.style.display = "flex";
 });
 
