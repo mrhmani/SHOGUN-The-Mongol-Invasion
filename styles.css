@@ -10,7 +10,7 @@
   background-color: #d0b505;
   padding: 15px 40px 15px 40px;
   margin: 10px;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Press Start 2P", system-ui;
   border: 0;
   box-shadow:
@@ -120,9 +120,9 @@
 }
 
 .start-screen h1 {
-  margin-top: -300px;
+  margin-top: -365px;
 
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Press Start 2P", system-ui;
   font-style: normal;
 
@@ -138,18 +138,8 @@
   letter-spacing: 2px;
   line-height: 1.6;
 
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Press Start 2P", system-ui;
-}
-
-.subtitle2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  font-size: 18px;
-  font-family: "Press Start 2P", system-ui;
-  color: rgb(0, 0, 0);
-  text-shadow: 4px 4px #c3bd0d;
 }
 
 .end-screen {
