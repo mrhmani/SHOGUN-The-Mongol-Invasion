@@ -21,7 +21,7 @@ class Game {
 
     this.enemyInterval = setInterval(() => {
       this.spawnEnemy();
-    }, 5000);
+    }, 3000);
 
     this.animationInterval = setInterval(() => {
       this.animate();
