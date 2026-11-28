@@ -7,7 +7,7 @@ body {
   /* background: url("./assets/backgroundbody.png") center center / cover fixed
     no-repeat; */
 
-  background-image: url("/assets/backgroundimage.png");
+  background-image: url("../assets/backgroundi-mage.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
